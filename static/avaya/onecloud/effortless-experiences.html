@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" class="ctvt-infog">
+  
+<!-- static/avaya/onecloud/effortless-experiences.html  .x [XR&CO'2014], Fri, 01 Jul 2022 09:52:12 GMT -->
+<head>
+   <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NJWMX8F');</script>
+	<!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+	<title>Avaya OneCloud – How to Create Effortless Customer-Employee Experiences</title>
+	<meta name="Description" content="Learn how to create effortless experiences that serve customers and employees alike—with Avaya OneCloud, an AI-enhanced experience platform."/>
+    <link
+      rel="stylesheet"
+      href="../../../../cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&amp;display=swap"
+    />
+    <style>
+      /* RESET */
+      /* Box sizing rules */
+      .ctvt-infog *,
+      .ctvt-infog *::before,
+      .ctvt-infog *::after {
+        box-sizing: border-box;
+      }
+
+      /* Remove default margin */
+      .ctvt-infog body,
+      .ctvt-infog h1,
+      .ctvt-infog h2,
+      .ctvt-infog h3,
+      .ctvt-infog h4,
+      .ctvt-infog p,
+      .ctvt-infog figure,
+      .ctvt-infog blockquote,
+      .ctvt-infog dl,
+      .ctvt-infog dd {
+        margin: 0;
+      }
+
+      /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+      .ctvt-infog ul[role="list"],
+      .ctvt-infog ol[role="list"] {
+        list-style: none;
+      }
+
+      /* Set core root defaults */
+      .ctvt-infog html:focus-within {
+        scroll-behavior: smooth;
+      }
+
+      /* Set core body defaults */
+      .ctvt-infog body {
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+      }
+
+      /* A elements that don't have a class get default styles */
+      .ctvt-infog a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      /* Make images easier to work with */
+      .ctvt-infog img,
+      .ctvt-infog picture {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* Inherit fonts for inputs and buttons */
+      .ctvt-infog input,
+      .ctvt-infog button,
+      .ctvt-infog textarea,
+      .ctvt-infog select {
+        font: inherit;
+      }
+
+      /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+      @media (prefers-reduced-motion: reduce) {
+        html.ctvt-infog :focus-within {
+          scroll-behavior: auto;
+        }
+
+        .ctvt-infog *,
+        .ctvt-infog *::before,
+        .ctvt-infog *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      /* END RESET */
+
+      /* Start Actual Style */
+
+      .ctvt-infog body {
+        font-family: "Noto Sans JP", sans-serif;
+      }
+      .ctvt-infog .close-button {
+        top: 20px;
+        right: 20px;
+        position: absolute;
+        background: transparent;
+        border: none;
+        font-size: 15pt;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        font-weight: 700;
+        color: white;
+        background: rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ctvt-infog .close-button:after {
+        display: inline-block;
+        content: "\00d7"; /* This will render the 'X' */
+      }
+
+      .ctvt-infog .pagewrap {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      .ctvt-infog .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .ctvt-infog .flex-header-image {
+        order: 1;
+        flex: 0 0 auto;
+        align-self: auto;
+        width: 68%;
+        background: url("images/Hero.png") #d92d27;
+        background-position: left center;
+        background-size: cover;
+        background-repeat: none;
+        min-height: 500px;
+      }
+      .ctvt-infog .flex-header-text {
+        order: 2;
+        flex: 0 0 auto;
+        align-self: center;
+        width: 32%;
+        background: #d92d27;
+        min-height: 500px;
+      }
+      .ctvt-infog .flex-header-text h1 {
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 25%;
+      }
+      .ctvt-infog .innerwrap {
+        padding: 118px 125px 50px 125px;
+      }
+      .ctvt-infog .smaller {
+        padding: 118px 158px 50px 158px;
+      }
+      .ctvt-infog .maintext p {
+        text-align: center;
+        font-size: 27px;
+        font-weight: 200;
+        margin-bottom: 50px;
+        color: #231f20;
+      }
+      .ctvt-infog .maintext h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        color: #da291c;
+        margin-bottom: 90px;
+      }
+      .ctvt-infog .flex-check-1,
+      .ctvt-infog .flex-check-2,
+      .ctvt-infog .flex-check-3,
+      .ctvt-infog .flex-check-4,
+      .ctvt-infog .flex-check-5,
+      .ctvt-infog .flex-check-6 {
+        flex: 0 0 auto;
+        align-self: auto;
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 90px;
+      }
+      .ctvt-infog .flex-check-1 {
+        order: 1;
+      }
+      .ctvt-infog .flex-check-2 {
+        order: 2;
+      }
+      .ctvt-infog .flex-check-3 {
+        order: 3;
+      }
+      .ctvt-infog .flex-check-4 {
+        order: 4;
+      }
+      .ctvt-infog .flex-check-5 {
+        order: 5;
+      }
+      .ctvt-infog .flex-check-6 {
+        order: 6;
+      }
+
+      .ctvt-infog .checklist h3 {
+        font-size: 27px;
+        font-weight: bold;
+        color: #231f20;
+        margin-top: 28px;
+      }
+      .ctvt-infog .checklist p {
+        font-size: 21px;
+        font-weight: 200;
+        color: #231f20;
+      }
+
+      .ctvt-infog .gray {
+        background-color: #f1f2f2;
+      }
+
+      .ctvt-infog .gray h2 {
+        margin-bottom: 40px;
+      }
+      .ctvt-infog .footer {
+        margin-bottom: 48px;
+      }
+      .ctvt-infog .flex-footer-image {
+        order: 2;
+        flex: 0 0 auto;
+        align-self: auto;
+        width: 68%;
+        background: url("images/footerhero.png");
+        background-position: left top;
+        background-size: cover;
+        background-repeat: none;
+        min-height: 350px;
+      }
+      .ctvt-infog .flex-footer-text {
+        order: 1;
+        flex: 0 0 auto;
+        align-self: center;
+        width: 32%;
+        background: #d92d27;
+        min-height: 350px;
+      }
+      .ctvt-infog .flex-footer-text h1 {
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 10%;
+        line-height: 1.3em;
+      }
+      .ctvt-infog .footerlink {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .ctvt-infog .footerlink:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .ctvt-infog .arrowside {
+        transition: all 0.5s ease-in-out;
+      }
+      .ctvt-infog .footerlink:hover > .arrowside {
+        margin-left: 20px;
+      }
+      .ctvt-infog .onelogo {
+        margin-top: 50px;
+        padding-left: 45px;
+      }
+
+      .ctvt-infog .flex-twothird {
+        flex: 0 0 auto;
+        align-self: center;
+        align-items: center;
+        width: 68%;
+        padding-left: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left: 22px solid;
+      }
+      .ctvt-infog .flex-animation {
+        flex: 0 0 auto;
+        align-self: center;
+        width: 32%;
+        align-items: center;
+        margin: 57px 0px;
+      }
+      .ctvt-infog .flex-twothird h3 {
+        font-size: 27px;
+        font-weight: bold;
+      }
+      .ctvt-infog .flex-twothird p {
+        font-size: 21px;
+        font-weight: 200;
+      }
+      .ctvt-infog .orange p {
+        padding-right: 65px;
+      }
+      .ctvt-infog .right img,
+      .ctvt-infog .right lottie-player {
+        float: right;
+      }
+      .ctvt-infog .teal {
+        border-color: #45af9a;
+      }
+      .ctvt-infog .navy {
+        border-color: #004e6c;
+      }
+      .ctvt-infog .orange {
+        border-color: #ea6834;
+      }
+      .ctvt-infog .green {
+        border-color: #0a8e9b;
+      }
+      .ctvt-infog .blue {
+        border-color: #1b77af;
+      }
+      .ctvt-infog .yellow {
+        border-color: #ea8c3f;
+      }
+
+      .ctvt-infog .gs_reveal {
+        opacity: 0;
+        visibility: hidden;
+        will-change: transform, opacity;
+      }
+      .ctvt-infog .lottiecheck {
+        width: 68px;
+        height: 68px;
+      }
+      .ctvt-infog .265 {
+        width: 265px;
+        height: 265px;
+      }
+      .ctvt-infog .370 {
+        width: 370px;
+        height: 242px;
+      }
+      .ctvt-infog #animation3 svg {
+        width: 370px !important;
+      }
+
+      .ctvt-infog #animation6 svg,
+      .ctvt-infog #animation5 svg,
+      .ctvt-infog #animation4 svg,
+      .ctvt-infog #animation2 svg,
+      .ctvt-infog #animation1 svg {
+        width: 265px !important;
+      }
+
+      .ctvt-infog #animation5 svg,
+      .ctvt-infog #animation1 svg {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJWMX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- partial:index.partial.html -->
+    <div class="pagewrap">
+      <div class="flex-container">
+        <div class="flex-header-image"></div>
+        <div class="flex-header-text">
+          <h1 class="gs_reveal gs_reveal_fromRight">
+            Create Effortless Experiences with Avaya OneCloud
+          </h1>
+        </div>
+      </div>
+      <div class="innerwrap">
+        <div class="maintext">
+          <p class="maintext_reveal_fromTop">
+            You’re competing for every customer’s time and attention—and you’re
+            working to attract and keep happy employees. So, how can you do it
+            all?
+          </p>
+          <h2 class="gs_reveal gs_reveal_fromTop">
+            A CHECKLIST: HOW TO STAY AHEAD
+          </h2>
+        </div>
+        <div class="flex-container checklist">
+          <div class="flex-check-1 check gs_reveal gs_reveal_fromLeft">
+            <div class="lottiecheck" id="check1"></div>
+            <h3>Service the customer who wants it all</h3>
+            <p>
+              Let customers self-select, self-serve, and self-compose
+              experiences based on moment-to-moment preferences.
+            </p>
+          </div>
+          <div
+            class="flex-check-2 check gs_reveal gs_reveal_fromRight gs_delay"
+          >
+            <div class="lottiecheck" id="check2"></div>
+            <h3>Support new ways of working</h3>
+            <p>
+              Deliver always-on, continuous collaboration for work-from-anywhere
+              employees, across every channel and device.
+            </p>
+          </div>
+          <div class="flex-check-3 check gs_reveal gs_reveal_fromLeft">
+            <div class="lottiecheck" id="check3"></div>
+            <h3>Provide one connected, total experience</h3>
+            <p>
+              Bring everyone together in a consistent, seamless journey across
+              all touchpoints—from any location, app or device.
+            </p>
+          </div>
+          <div
+            class="flex-check-4 check gs_reveal gs_reveal_fromRight gs_delay"
+          >
+            <div class="lottiecheck" id="check4"></div>
+            <h3>Bring customers into your business</h3>
+            <p>
+              Adapt to changing needs by making customers part of your workflows
+              and empowering them to co-create solutions.
+            </p>
+          </div>
+          <div class="flex-check-5 check gs_reveal gs_reveal_fromLeft">
+            <div class="lottiecheck" id="check5"></div>
+            <h3>Enable innovation on demand</h3>
+            <p>
+              Gain the agility to innovate and execute on the fly, in response
+              to evolving customer demands.
+            </p>
+          </div>
+          <div
+            class="flex-check-6 check gs_reveal gs_reveal_fromRight gs_delay"
+          >
+            <div class="lottiecheck" id="check6"></div>
+            <h3>Connect every experience holistically</h3>
+            <p>
+              Bring together every touchpoint, process, and resource, while
+              infusing knowledge and insights throughout.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagewrap gray">
+      <div class="innerwrap smaller">
+        <div class="maintext">
+          <h2 class="gs_reveal gs_reveal_fromTop">
+            AVAYA ONECLOUD MAKES IT EFFORTLESS
+          </h2>
+          <p class="gs_reveal gs_reveal_fromTop">
+            Every single interaction matters more than ever. With Avaya
+            OneCloud, you can compose the unique experiences you need, in the
+            moment.
+          </p>
+        </div>
+        <div class="flex-container">
+          <div class="flex-twothird left teal gs_reveal gs_reveal_fromLeft">
+            <h3>Create, extend, or customize a solution</h3>
+            <p>
+              Compose the experiences you need by extending what you already
+              have, using something out-of-the-box, or creating a new solution.
+            </p>
+          </div>
+          <div class="flex-animation right 265" id="animation1"></div>
+          <div class="flex-animation" id="animation2"></div>
+          <div class="flex-twothird right navy gs_reveal gs_reveal_fromRight">
+            <h3>Adapt and innovate with AI as your co-creator</h3>
+            <p>
+              Integrate AI where you need it most and optimize your business as
+              it gets smarter over time—no DevOps resources needed.
+            </p>
+          </div>
+
+          <div class="flex-twothird left orange gs_reveal gs_reveal_fromLeft">
+            <h3>Achieve powerful workstream collaboration</h3>
+            <p>
+              Bridge disparate functions, break down silos between employee and
+              customer workstreams, and enable collaboration across teams.
+            </p>
+          </div>
+          <div class="flex-animation right 370" id="animation3"></div>
+          <div class="flex-animation" id="animation4"></div>
+          <div class="flex-twothird right green gs_reveal gs_reveal_fromRight">
+            <h3>Connect with industry-leading cloud technology</h3>
+            <p>
+              Tap into a unique architecture that delivers cloud as a set of
+              on-demand apps, with partners leveraging AI in new ways.
+            </p>
+          </div>
+          <div class="flex-twothird left blue gs_reveal gs_reveal_fromLeft">
+            <h3>Use what you have—add what you need</h3>
+            <p>
+              Accelerate innovation without having to start from scratch by
+              building cloud capabilities onto your existing technology stack.
+            </p>
+          </div>
+          <div class="flex-animation right" id="animation5"></div>
+          <div class="flex-animation" id="animation6"></div>
+          <div class="flex-twothird right yellow gs_reveal gs_reveal_fromRight">
+            <h3>Gain experience building know-how</h3>
+            <p>
+              Leverage the expertise of Avaya’s service teams and partners to
+              co-create your unique solution and deliver experiences that
+              matter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagewrap footer">
+      <div class="flex-container">
+        <div class="flex-footer-text">
+          <h1 class="gs_reveal gs_reveal_fromRight">
+            <a href="../../../en/onecloud/index.html" class="footerlink"
+              >Start Creating Your Own Experiences
+              <span class="arrowside">></span></a
+            >
+          </h1>
+          <img
+            src="images/onecloud-logo.png"
+            alt="onecloud"
+            class="onelogo gs_reveal gs_reveal_fromBottom"
+          />
+        </div>
+        <div class="flex-footer-image lazy"></div>
+      </div>
+    </div>
+    <button
+      class="close-button"
+      onClick="javascript:window.close('','_parent','');"
+    ></button>
+    <!-- partial -->
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.12/lottie.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      var baseDelay = 0.5;
+
+      var data = [
+        {
+          el: "#check1",
+          delay: baseDelay,
+          path: "https://assets7.lottiefiles.com/packages/lf20_lfpwwcsu.json",
+        },
+        {
+          el: "#check2",
+          delay: baseDelay * 2,
+          path: "https://assets2.lottiefiles.com/packages/lf20_qi19xupf.json",
+        },
+        {
+          el: "#check3",
+          delay: baseDelay,
+          path: "https://assets4.lottiefiles.com/packages/lf20_lfl0a0gd.json",
+        },
+        {
+          el: "#check4",
+          delay: baseDelay * 2,
+          path: "https://assets8.lottiefiles.com/packages/lf20_ezzpjolb.json",
+        },
+        {
+          el: "#check5",
+          delay: baseDelay,
+          path: "https://assets8.lottiefiles.com/packages/lf20_dqsgmxbv.json",
+        },
+        {
+          el: "#check6",
+          delay: baseDelay * 2,
+          path: "https://assets9.lottiefiles.com/packages/lf20_ewhfn5li.json",
+        },
+        {
+          el: "#animation1",
+          path: "https://assets3.lottiefiles.com/private_files/lf30_sbg2c9n4.json",
+        },
+        {
+          el: "#animation2",
+          path: "https://assets8.lottiefiles.com/private_files/lf30_tdfu2jma.json",
+        },
+        {
+          el: "#animation3",
+          path: "https://assets5.lottiefiles.com/private_files/lf30_ahaekco5.json",
+        },
+        {
+          el: "#animation4",
+          path: "https://assets10.lottiefiles.com/private_files/lf30_urz6avna.json",
+        },
+        {
+          el: "#animation5",
+          path: "https://assets4.lottiefiles.com/private_files/lf30_hw3mnxkb.json",
+        },
+        {
+          el: "#animation6",
+          path: "https://assets6.lottiefiles.com/private_files/lf30_pyrvtlbk.json",
+        },
+      ];
+
+      function animateFrom(elem, direction) {
+        direction = direction || 1;
+        var x = 0,
+          y = direction * 100,
+          delay = 0;
+        if (elem.classList.contains("gs_reveal_fromLeft")) {
+          x = -100;
+          y = 0;
+        } else if (elem.classList.contains("gs_reveal_fromRight")) {
+          x = 100;
+          y = 0;
+        } else if (elem.classList.contains("gs_reveal_fromTop")) {
+          x = 0;
+          y = -100;
+        } else if (elem.classList.contains("gs_reveal_fromBottom")) {
+          x = 0;
+          y = 100;
+        }
+        if (elem.classList.contains("gs_delay")) {
+          delay = baseDelay;
+        }
+        gsap.fromTo(
+          elem,
+          { x: x, y: y, autoAlpha: 0 },
+          {
+            duration: 1.25,
+            x: 0,
+            y: 0,
+            autoAlpha: 1,
+            ease: "expo",
+            overwrite: "auto",
+            delay: delay,
+          }
+        );
+      }
+
+      function hide(elem) {
+        gsap.set(elem, { autoAlpha: 0 });
+      }
+
+      data.forEach(function (curData) {
+        var element = document.querySelector(curData.el),
+          animation = lottie.loadAnimation({
+            container: element,
+            renderer: "svg",
+            loop: false,
+            autoplay: false,
+            path: curData.path,
+          });
+
+        animation.addEventListener("DOMLoaded", function () {
+          ScrollTrigger.create({
+            trigger: element,
+            start: "top 75%",
+            onToggle: function (self) {
+              if (self.isActive) {
+                if (curData.delay) {
+                  animation.goToAndStop(0);
+                  gsap.delayedCall(curData.delay, function () {
+                    animation.play();
+                  });
+                } else {
+                  animation.play();
+                }
+              }
+            },
+          });
+          ScrollTrigger.refresh();
+        });
+      });
+
+      gsap.fromTo(
+        ".maintext_reveal_fromTop",
+        { x: 0, y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          x: 0,
+          y: 0,
+          autoAlpha: 1,
+          ease: "expo",
+          overwrite: "auto",
+        }
+      );
+
+      gsap.utils.toArray(".gs_reveal").forEach(function (elem, i) {
+        hide(elem); // assure that the element is hidden when scrolled into view
+        var hidden = true;
+
+        // Bottom logo needs to trigger at 90%
+        var isBottomLogo = elem.classList.contains("onelogo");
+        console.log(isBottomLogo);
+
+        ScrollTrigger.create({
+          trigger: elem,
+          start: isBottomLogo ? "top 90%" : "top 75%",
+          onToggle: function (self) {
+            if (self.isActive && hidden) {
+              hidden = false;
+              animateFrom(elem, self.direction);
+            }
+          },
+        });
+        ScrollTrigger.create({
+          trigger: elem,
+          start: "top bottom",
+          end: "bottom top",
+          onToggle: function (self) {
+            if (!self.isActive && !hidden) {
+              hidden = true;
+              hide(elem);
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+
+<!-- static/avaya/onecloud/effortless-experiences.html  .x [XR&CO'2014], Fri, 01 Jul 2022 09:52:17 GMT -->
+</html>
+
+<tag xmlns:xyz=".ctvt-infog{}"></tag>

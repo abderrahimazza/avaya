@@ -1,0 +1,515 @@
+/* Style Sheet for Avaya OneCloud Flow WebChat Widget */
+/* V1.1.5 - 20210823 */
+/* pcolin@avaya.com - March 2021 */
+
+/*#region DECLARATIONS ******************************************************************/
+:root {
+    --avaya_red:rgb(218,41,28);
+    --avaya_blue:rgb(0,78,108);
+    --avaya_blue_light:rgb(27,119,175);
+    --avaya_teal: rgb(10,142,155);
+    --avaya_grey: rgb(230,230,230);
+    --avaya_grey_dark: rgb(51,51,51);
+    --avaya_grey_light: rgb(245,245,245);
+    --color_shadow: rgb(192,192,192);
+    --font_family: "Verdana";
+    --font_size_normal: 12px;
+    --shadow_main: 3px 3px 10px 0px var(--color_shadow);
+}
+
+/*#endregion DECLARATIONS */
+
+
+/*#region MAIN_WINDOW ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+    max-width: 380px;
+    max-height: 650px;
+    height: calc(100% - 115px);
+    animation: grow 0.5s;
+    border-radius: 6px;
+    box-shadow: var(--shadow_main);
+}
+
+@keyframes grow {
+  0% {
+    height: 5.8px;
+  }
+  100% {
+    height: 600px;
+  }
+}
+
+
+/*#endregion MAIN_WINDOW */
+
+/*#region HEADER ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-bar {
+  background: var(--avaya_red);
+  box-shadow: none;
+  flex-basis: 90px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-logo {
+    background-image: url("../assets/bot_avaya2.png");
+	flex-basis: 80px;
+	height: 75px;
+    margin-left: 0px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-title {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-close-button {
+    flex-basis: 80px;
+    align-self: flex-start;
+    text-align: end;
+    border-radius: 0px;
+    background-color: var(--avaya_red);
+
+}
+
+/*#endregion HEADER */
+
+/*#region MESSAGE_FRAME ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-chat-history {
+    background-color: var(--avaya_grey_light);
+}
+
+/*#endregion MESSAGE_FRAME */
+
+/*#region MESSAGE_ROW ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-message-row {
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-message-row.bot {
+    padding-left: 10px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-message-row.user {
+    padding-right: 10px;
+}
+
+/*#endregion MESSAGE_ROW */
+
+/*#region MESSAGE_BUBBLE ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message {
+    border: none;
+    box-shadow: var(--shadow_msg);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: var(--font_size_normal);
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.bot {
+    background: white;
+    border: none;
+    color: black;
+    font-family: var(--font_family);
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.user {
+    background: var(--avaya_teal);
+    color: white;
+}
+
+/*#endregion MESSAGE_BUBBLE */
+
+/*#region TYPING_BUBBLE ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-typing-indicator {
+    background: var(--avaya_grey);
+}
+
+/*#endregion TYPING_BUBBLE */
+
+/*#region AVATARS ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-avatar {
+    flex-basis: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-avatar.bot {
+    /* background-image: url("https://www.avaya.com/static/webchat/common/assets/avaya_bot_icon_v2.png"); */
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-avatar.user {
+    background-image: url("../assets/user_avatar.png");
+    background-color: var(--avaya_teal);
+    border-radius: 20px;
+}
+
+/*#endregion AVATARS */
+
+/*#region INPUT_FRAME ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input {
+    background: white;
+    box-shadow: none;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-message-input {
+    color: black;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-button-send {
+    border-radius: 0px;
+    background-color: white;
+    margin-top: 4px;
+	margin-right: 0px;
+}
+
+/*#endregion INPUT_FRAME */
+
+/*#region PERSISTENT_MENU ******************************************************************/
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-menu-form {
+    background-color: white;
+    border: none;
+    margin: 0px;
+	padding: 0px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-button-menu {
+    border-radius: 0px;
+    background-color: white;
+    margin-top: 0px;
+	margin-left: 0px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-persistent-menu-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+	height: 0px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-persistent-menu-item {
+    color: var(--avaya_grey_dark);
+    width: 300px;
+    font-size: 14px;
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: white;
+    padding: 2px;
+    margin: 0px;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-input-persistent-menu-item:hover {
+    color: white;
+    border-color: var(--avaya_teal);
+    border-radius: 2px;
+    background-color: var(--avaya_teal);  
+}
+
+/*#endregion PERSISTENT_MENU */
+
+/*#region TOGGLE_BUTTON *************************************************************************/
+
+
+[data-cognigy-webchat-root] [data-cognigy-webchat-toggle] {
+    background-color: var(--avaya_red);
+}
+
+
+/* this removes the "x" icon for the toggle button when it's "Open" */
+
+    [data-cognigy-webchat-root] [data-cognigy-webchat-toggle][aria-label*="Open chat"] > * {
+    display: none;
+}
+
+
+/* this renders a custom background image for the toggle button when it's "open" */
+
+[data-cognigy-webchat-root] [data-cognigy-webchat-toggle][aria-label*="Open chat"] {
+    background-image: url("../assets/user_avatar.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+/*#endregion TOGGLE_BUTTON */
+
+/*#region GALLERY *************************************************************************/
+
+[data-cognigy-webchat-root] .webchat-carousel-template-root {
+    box-shadow: var(--shadow_msg);
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-frame {
+    border-radius: 3px;
+}
+
+[data-cognigy-webchat] .webchat-carousel-template-frame > :nth-child(1) {
+    padding-top: 40%; /* image aspect ratio 50% for 2:1, 75% for 4:3 etc */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-content {
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-title {
+    font-family: var(--font_family);
+    font-size: var(--font_size_normal);
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-subtitle {
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-button {
+    font-family: var(--font_family);
+    font-size: var(--font_size_normal);
+    color: white;
+    background: var(--avaya_teal);
+    height: 40px;
+}
+
+[data-cognigy-webchat-root] .webchat-carousel-template-button:hover {
+    background: var(--avaya_grey_light);
+    color: var(--avaya_teal);
+    border: 2px solid var(--avaya_teal);
+    font-weight: bold;
+}
+
+/*#endregion GALLERY */
+
+/*#region QUICK_REPLIES *************************************************************************/
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-root {
+/* width: 500px; */
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-header-message {
+    font-family: var(--font_family);
+    font-size: var(--font_size_normal);
+    background: white;
+    border: none;
+    color: black;
+    text-align: left;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: var(--shadow_msg);
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container {
+    display: flex;
+    flex-direction: row;
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container .webchat-quick-reply-template-reply {
+    border: 2px solid var(--avaya_teal);
+    border-radius: 10px;
+	color: var(--avaya_teal);
+    background-color: var(--avaya_grey_light);
+    font-family: var(--font_family);
+	font-size: var(--font_size_normal);
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container .webchat-quick-reply-template-reply:hover {
+    color: white;
+    background-color: var(--avaya_teal);
+}
+/*#endregion QUICK_REPLIES */
+
+/*#region BUTTONS *************************************************************************/
+
+[data-cognigy-webchat-root] .webchat-buttons-template-root {
+    border-radius: 2px;
+    animation: easeOutElastic 1s ;
+    box-shadow: var(--shadow_msg);
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: black;
+    text-align: left;
+    font-size: var(--font_size_normal);
+    font-family: var(--font_family);
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-root .webchat-buttons-template-button {
+    background-color: var(--avaya_teal);
+    color: white;
+    border: 2px solid var(--avaya_teal);
+    font-size: var(--font_size_normal);
+    font-family: var(--font_family);
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-root .webchat-buttons-template-button:hover {
+    color: var(--avaya_teal);
+    background-color: white;
+}
+
+/*#endregion BUTTONS */
+
+/*#region DATE_PICKER *************************************************************************/
+
+[data-cognigy-webchat-root] .webchat-plugin-date-picker {
+    font-size: 100%;
+}
+
+[data-cognigy-webchat-root] .webchat-plugin-date-picker-header {
+    background-color: black;
+    font-weight: normal;
+    align-items: flex-end;
+}
+
+[data-cognigy-webchat-root] .webchat-plugin-date-picker-content {
+    box-shadow: none;
+}
+
+[data-cognigy-webchat-root] .webchat-plugin-date-picker-footer {
+    padding: 1em 3em;
+}
+
+[data-cognigy-webchat-root] .flatpickr-weekday {
+    text-transform: uppercase;
+}
+
+[data-cognigy-webchat-root] .flatpickr-day.selected {
+    background: #28c8ef;
+    color: hsla(0, 0%, 100%, 0.95);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+[data-cognigy-webchat-root] .flatpickr-day.flatpickr-disabled{
+    color: rgb(192,192,192);
+    text-decoration: line-through;
+}
+
+
+/*#endregion DATE_PICKER */
+
+/*#region LIST *************************************************************************/
+
+[data-cognigy-webchat-root] .webchat-list-template-root {
+    border-radius: 5px;
+	background: white;
+}
+
+[data-cognigy-webchat] .webchat-list-template-root > button {
+    background-color:white;
+    color: var(--avaya_teal);
+    font-size: small;
+    border-color: var(--avaya_teal);
+}
+
+[data-cognigy-webchat] .webchat-list-template-root > button:hover {
+    background-color: var(--avaya_teal);
+    color: white;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-header {
+	background: var(--avaya_red);
+    background-color: transparent;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-header-content {
+    text-align: left;
+	background: var(--avaya_red);
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-header-title {
+    color: white;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-header-subtitle {
+    color: grey;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-header-button {
+    background-color: var(--avaya_teal);   
+	color: white;
+}
+  
+[data-cognigy-webchat-root] .webchat-list-template-header-button:hover {
+    background-color: var(--avaya_teal);   
+	color: white;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element {
+    background: white;
+    padding: 2px;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element > :nth-child(1)  {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element-title {
+    color: black;
+    margin: 2px 5px 2px 5px;
+    align-self: left;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element-subtitle {
+    color: grey;
+    font-size: x-small;
+    margin: 2px 5px 2px 5px;
+    align-self: left;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element-button {
+    font-size: x-small;
+    border-color: var(--avaya_teal);
+    border-radius: 2px;
+    background-color: white;
+    color: var(--avaya_teal);
+    margin: 5px;
+    padding: 2px 10px 2px 10px;
+    align-self: center;
+}
+
+[data-cognigy-webchat-root] .webchat-list-template-element-button:hover {
+    background: var(--avaya_teal);   
+	color: white;
+}
+
+/*#endregion LIST */
+
+/*#region DEVICE SPECIFIC SETTINGS**************************************/
+
+/* Tablets */
+@media only screen and (max-width: 992px) { 
+    [data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 767px) { 
+    [data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+}
+
+/*#endregion DEVICE SPECIFIC SETTINGS**************************************/
